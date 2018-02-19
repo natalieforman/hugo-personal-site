@@ -21,6 +21,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('static/scss/*.scss')
         .pipe(sass())
+        .pipe(gulp.dest('static/css'));
 });
 
 // Concatenate & Minify JS
